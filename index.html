@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <title>Thomas Jolin Folk Music</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <link href="Content/font-awesome.min.css" rel="stylesheet" />
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
@@ -13,9 +13,14 @@
     <link href="nanoGALLERY/css/nanogallery2.min.css" rel="stylesheet" />
     <link href="Content/animate.css" rel="stylesheet" />
     <link href="Content/Site.css" rel="stylesheet" />
+    <link href="Content/loader.css" rel="stylesheet" />
 </head>
 
 <body>
+    <!--the loader-->
+    <div class="se-pre-con"></div>
+
+
     <!--Navigation Bar-->
     <header>
         <nav class="navbar-default navbar-fixed-top cbp-af-header" role="navigation">
@@ -40,7 +45,7 @@
                         <li><a href="#Press" class="full-page-link">Press</a></li>
                         <li><a href="#Music" class="text-row-link">Music</a></li>
                         <li><a href="#Photos" class="text-row-link">Photos</a></li>
-                        <li><a href="#History" class="text-row-link">History</a></li>                        
+                        <li><a href="#History" class="text-row-link">History</a></li>
                         <li><a href="#Contact" class="full-page-link">Contact</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -54,7 +59,7 @@
     <div class="container-fluid">
         <section id="top" class="row title-row">
             <div class="fill-screen" style="background-image: url('Content/photos/BackDrops/FallLeavesDark.jpg')">
-                <div class="landing-page">                    
+                <div class="landing-page">
                     <img class="img-responsive" src="Content/photos/JFMCenter.png" alt="Jolin Folk Musicale" />
                     <div class="tom-details">
                         <h1>Thomas Jolin</h1>
@@ -62,12 +67,12 @@
                         <a class="btn animated infinite pulse" href="#Bio">Learn More...</a>
                     </div>
                 </div>
-                    <div class="down-button">
-                        <a class="btn" href="#Bio">
-                            <i class="fa fa-arrow-circle-down fa-4x"></i>
-                        </a>
-                    </div>
+                <div class="down-button">
+                    <a class="btn" href="#Bio">
+                        <i class="fa fa-arrow-circle-down fa-4x"></i>
+                    </a>
                 </div>
+            </div>
         </section>
     </div>
 
@@ -75,14 +80,14 @@
     <!--Bio and History Section-->
     <section id="Bio" class="row text-banner">
         <div class="bio-part">
-            <img class="col-md-4 bio-img img-responsive" src="Content/photos/TomJolin/BioPhoto.jpg"/>
+            <img class="col-md-4 bio-img img-responsive" src="Content/photos/TomJolin/BioPhoto.jpg" />
             <div class="bio-details col-md-8">
                 <h1>About Tom</h1>
 
                 <p>
                     Tom Jolin plays traditional American music, mixing vocals with the hammered dulcimer,
 
-                    banjo, button accordion, harmonica and more. He has recorded on eight albums. 
+                    banjo, button accordion, harmonica and more. He has recorded on eight albums.
                     <a href="#History" class="text-row-link">Learn more about his recording and performance history.</a>
                 </p>
 
@@ -187,7 +192,7 @@
                     Appalachian Mountains near Gettysburg, Pennsylvania.
                 </p>
             </div>
-        </div>        
+        </div>
     </section>
 
 
@@ -367,8 +372,8 @@
                             <i id="yellowRose2" class="music-pause-btn fa fa-pause-circle fa-5x animated flipInY"></i>
                         </span>
                         <p>
-                            "The Yellow Rose of Texas": The Center for American History at the University of Texas has an unpublished early handwritten version of the song, perhaps dating from the time of the Battle of San Jacinto in 1836. The author is unknown. The earliest published version, by Firth, Pond and Company of New York and dated September 2, 1858, identifies the composer and arranger as "J.K."; its lyrics are almost identical to those in the handwritten manuscript.  "Ring the Banjo" was composed by Stephen Foster in 1851.     
-                         </p>
+                            "The Yellow Rose of Texas": The Center for American History at the University of Texas has an unpublished early handwritten version of the song, perhaps dating from the time of the Battle of San Jacinto in 1836. The author is unknown. The earliest published version, by Firth, Pond and Company of New York and dated September 2, 1858, identifies the composer and arranger as "J.K."; its lyrics are almost identical to those in the handwritten manuscript.  "Ring the Banjo" was composed by Stephen Foster in 1851.
+                        </p>
                     </li>
 
                     <!--Barlow Knife/Kingdom Coming-->
@@ -399,7 +404,7 @@
                             <i id="auctionBlock2" class="music-pause-btn fa fa-pause-circle fa-5x animated flipInY"></i>
                         </span>
                         <p>
-                            This Negro Spiritual was sung during the Civil War by troops of the 1st South Carolina Volunteers, the first federally authorized African-American regiment comprised of former slaves.   This is documented by Thomas Higginson, who served as a colonel in the 1st South Carolina Volunteers. In 1870, he authored “Army Life in a Black Regiment” detailing the song.  According to “American History Through Song, Civil War Songs” (1989) by Keith and Rusty McNeil, the spiritual uses a traditional Ashanti melody from Western Africa. 
+                            This Negro Spiritual was sung during the Civil War by troops of the 1st South Carolina Volunteers, the first federally authorized African-American regiment comprised of former slaves.   This is documented by Thomas Higginson, who served as a colonel in the 1st South Carolina Volunteers. In 1870, he authored “Army Life in a Black Regiment” detailing the song.  According to “American History Through Song, Civil War Songs” (1989) by Keith and Rusty McNeil, the spiritual uses a traditional Ashanti melody from Western Africa.
                         </p>
                     </li>
 
@@ -496,7 +501,7 @@
                         </p>
                     </li>
                 </ol>
-                
+
 
                 <!--music control-->
                 <audio id="player"></audio>
@@ -806,7 +811,10 @@
     </footer>
 
 
+
+    <!--preloader gif needs jquery-->
     <script src="Scripts/jquery-3.1.1.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/classie.js"></script>
     <script src="Scripts/cbpAnimatedHeader.js"></script>
@@ -818,5 +826,6 @@
     <script src="Scripts/bootstrapValidator.min.js"></script>
     <script src="Scripts/contactForm.js"></script>
     <script src="Scripts/scrolling.js"></script>
+    <script src="Scripts/loader.js"></script>
 </body>
 </html>
